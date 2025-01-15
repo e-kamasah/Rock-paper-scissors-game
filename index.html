@@ -28,6 +28,10 @@
       <button onclick="
         playGame('scissors');
       ">Scissors</button>
+
+      <p class="js-result"></p>
+      <p class="js-moves"></p>
+      <p class="js-score"></p>
   
       <button onclick="
         score.wins = 0;
@@ -35,6 +39,7 @@
         score.ties = 0;
         localStorage.removeItem('score');
         alert ('Score has been reset')
+        updateScoreElement();
       ">Reset Score</button>
 
     <script src="script.js"></script>
